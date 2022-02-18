@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VoyageOrganise">
+   <children>
+      <ImageView fitHeight="862.0" fitWidth="1447.0" layoutX="-359.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Edinburgh%20Central.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="submitButton" layoutX="448.0" layoutY="766.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: lightGreen;" text="Submit" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="71.12" radius="33.585" spread="0.17" width="65.22" />
+         </effect>
+      </Button>
+      <Button fx:id="backButton" layoutX="33.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: lightGreen;" text="Back" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="41.64" radius="21.055" width="44.58" />
+         </effect>
+      </Button>
+      <Label fx:id="name" layoutX="251.0" layoutY="145.0" text="Nom" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="surname" layoutX="251.0" layoutY="205.0" text="Prenom" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="destination" layoutX="246.0" layoutY="267.0" text="Destination" textFill="#01f2ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantity" layoutX="246.0" layoutY="327.0" text="Quantité" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="boughtPrice" layoutX="249.0" layoutY="389.0" text="Prix unitaire" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="salePrice" layoutX="248.0" layoutY="452.0" text="Prix de vente" textFill="#01f2ff" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="departureDate" layoutX="248.0" layoutY="513.0" text="Date de depart" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="returnDate" layoutX="250.0" layoutY="574.0" text="Date de retour" textFill="#01f2ff" underline="true">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="432.0" layoutY="144.0" promptText="Le Nom du Client" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="surnameTextField" layoutX="432.0" layoutY="204.0" promptText="Le Penom du Client" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="destinationTextField" layoutX="432.0" layoutY="267.0" promptText="La Destination" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="returnField" layoutX="432.0" layoutY="573.0" promptText="La date de Retour" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="departureDateTextField" layoutX="432.0" layoutY="512.0" promptText="La date de Depart" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="salePriceTextField" layoutX="432.0" layoutY="452.0" promptText="Le prix de vente" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="boughtPriceTextField" layoutX="432.0" layoutY="388.0" promptText="Le Prix unitaire" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="quantityTextField" layoutX="432.0" layoutY="326.0" promptText="La Quantité" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>

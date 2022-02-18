@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginPage">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="836.0" fitWidth="738.0" layoutX="-37.0" layoutY="-144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Edinburgh%20large.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lightLinesLogo" fitHeight="115.0" fitWidth="196.0" layoutX="156.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../0.jpeg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" layoutX="238.0" layoutY="306.0" promptText="Enter your Password" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="textField" layoutX="238.0" layoutY="262.0" promptText="Enter your Username" style="-fx-background-color: lightGray; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" styleClass="-fx-border" />
+      <Label fx:id="user" layoutX="102.0" layoutY="252.0" text="User" textFill="#02eaf2" underline="true" wrapText="true">
+         <font>
+            <Font name="Al Bayan Plain" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="password" layoutX="100.0" layoutY="296.0" text="Password" textFill="#04eaee" underline="true">
+         <font>
+            <Font name="Al Bayan Plain" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="236.0" layoutY="387.0" mnemonicParsing="false" onAction="#login" onKeyPressed="#enter" style="-fx-background-color: cyan;" text="Login" underline="true" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="87.33" radius="21.3325" spread="0.12" width="0.0" />
+         </effect>
+      </Button>
+      <ImageView fx:id="myLogo" fitHeight="390.0" fitWidth="406.0" layoutX="70.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Abs%20Logo%20(Transparent%20with%20colours).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

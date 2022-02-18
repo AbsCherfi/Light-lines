@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisaInfo">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="1267.0" fitWidth="879.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Edinburgh%20street%20image.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="53.0" prefHeight="580.0" prefWidth="752.0" style="-fx-background-color: gray; -fx-border-color: lightBlue; -fx-border-width: 0px 2px 2px 2px;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="108.0" text="Nom" />
+          <TableColumn fx:id="surname" prefWidth="116.0" text="Prenom" />
+            <TableColumn fx:id="destination" prefWidth="145.0" text="Destination" />
+            <TableColumn fx:id="type" prefWidth="122.00006103515625" text="Type" />
+            <TableColumn fx:id="quantity" prefWidth="54.00006103515625" text="Quantite" />
+            <TableColumn fx:id="boughtPrice" prefWidth="98.00006103515625" text="Prix unitaire" />
+            <TableColumn fx:id="salePrice" prefWidth="109.0" text="Prix de vente" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="399.0" layoutY="725.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: lightGreen;" text="Back" underline="true">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="87.21" radius="42.707499999999996" spread="0.47" width="85.62" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

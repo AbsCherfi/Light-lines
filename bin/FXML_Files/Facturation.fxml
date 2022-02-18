@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Facturation">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="926.0" fitWidth="1463.0" layoutX="-717.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../castle.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="104.0" layoutY="126.0" prefHeight="462.0" prefWidth="534.0" style="-fx-background-color: grey; -fx-border-color: lightBlue; -fx-border-width: 0px 2px 2px 2px;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="99.0" text="Nom" />
+          <TableColumn fx:id="surname" prefWidth="100.0" text="Prenom" />
+            <TableColumn fx:id="totalPrice" prefWidth="87.0" text="Prix Total" />
+            <TableColumn fx:id="serviceType" prefWidth="123.0" text="Type de Service" />
+            <TableColumn fx:id="bookingTime" prefWidth="123.0" text="Date de Transaction" />
+        </columns>
+      </TableView>
+      <Button fx:id="button" layoutX="329.0" layoutY="672.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: lightGreen;" text="Back" underline="true">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="75.86" radius="32.61" spread="0.57" width="56.58" />
+         </effect></Button>
+      <Label layoutX="132.0" layoutY="72.0" style="-fx-background-color: lightGray; -fx-border-color: darkGray; -fx-border-width: 2px 2px 2px 2px;" text="Filter by Date">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchDateTextField" layoutX="307.0" layoutY="72.0" prefHeight="25.0" prefWidth="264.0" promptText="Entrer une date" />
+   </children>
+</AnchorPane>

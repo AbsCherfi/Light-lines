@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPage">
+   <children>
+      <ImageView fx:id="imageView" accessibleRole="CONTEXT_MENU" fitHeight="1012.0" fitWidth="1394.0" layoutX="-1.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Edinburgh%20landscape%20large.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="voyageOrganise" layoutX="21.0" layoutY="120.0" mnemonicParsing="false" onAction="#goVOrganise" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: lightGreen;" text="_Voyage Organise" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="41.76" radius="20.377499999999998" width="41.75" />
+         </effect>
+      </Button>
+      <Button fx:id="facturation" layoutX="21.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToFacturation" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: lightGreen;" text="    Facturation" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="35.83" radius="18.895" width="41.75" />
+         </effect>
+      </Button>
+      <Button fx:id="billet" layoutX="21.0" layoutY="205.0" mnemonicParsing="false" onAction="#goToBillet" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: lightGreen;" text="   Billet" textOverrun="WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow radius="15.19" width="41.76" />
+         </effect>
+      </Button>
+      <Button fx:id="visa" layoutX="18.0" layoutY="248.0" mnemonicParsing="false" onAction="#goToVisa" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: lightGreen;" text="      Visa" underline="true" AnchorPane.bottomAnchor="530.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow radius="15.19" width="41.76" />
+         </effect>
+      </Button>
+      <Button fx:id="voyageOrganiseInfo" layoutX="1193.0" layoutY="722.0" mnemonicParsing="false" onAction="#goVOrganiseInfo" prefHeight="25.0" prefWidth="164.0" style="-fx-background-color: lightGreen;" text="Voyage O Info" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="41.76" radius="20.38" spread="0.47" width="41.76" />
+         </effect></Button>
+      <Button fx:id="billetInfo" layoutX="1232.0" layoutY="673.0" mnemonicParsing="false" onAction="#goToBilletInfo" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: lightGreen;" text="     Billet Info" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="41.76" radius="20.38" spread="0.48" width="41.76" />
+         </effect>
+      </Button>
+      <Button fx:id="visaInfo" layoutX="1255.0" layoutY="623.0" mnemonicParsing="false" onAction="#goToVisaInfo" prefHeight="28.0" prefWidth="102.0" style="-fx-background-color: lightGreen;" text="         Visa Info" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="40.28" radius="20.009999999999998" spread="0.49" width="41.76" />
+         </effect>
+      </Button>
+      <ComboBox fx:id="comboBox" layoutX="1219.0" onAction="#goToClient" prefWidth="150.0" promptText="                 Clients" style="-fx-background-color: lightGreen">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow radius="15.19" width="41.76" />
+         </effect></ComboBox>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="1242.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../rating.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="16.0" layoutX="23.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../traveling.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="19.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ticket.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="18.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bills.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="18.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../visa.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="1205.0" layoutY="721.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../travel-bag.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="1238.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ticket.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="41.0" layoutX="1261.0" layoutY="623.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../passport.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOutButton" layoutX="517.0" layoutY="748.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: lightGreen;" text="Log out" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="38.79" radius="20.377499999999998" spread="0.1" width="44.72" />
+         </effect>
+      </Button>
+      <MenuBar fx:id="menuBar" prefHeight="30.0" prefWidth="207.0" style="-fx-background-color: lightGreen; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: blue;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="exportMenuItem" mnemonicParsing="false" onAction="#exportFile" text="Export" />
+                  <MenuItem fx:id="importMenuItem" mnemonicParsing="false" onAction="#importFile" text="Import" />
+            </items>
+          </Menu>
+          <Menu fx:id="editMenu" mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#delete" text="Delete" />
+            </items>
+          </Menu>
+            <Menu fx:id="incomeMenu" mnemonicParsing="false" text="Income">
+              <items>
+                <MenuItem fx:id="incomeTodayMItem" mnemonicParsing="false" onAction="#getIncomeToday" text="Income today" />
+                  <MenuItem fx:id="incomeLastWeek" mnemonicParsing="false" onAction="#incomeLWeek" text="Income last week" />
+                  <MenuItem fx:id="incomeLMonthItem" mnemonicParsing="false" onAction="#incomeLMonth" text="Income last month" />
+              </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+            <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+              </items>
+            </Menu>
+        </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="50.48" radius="21.792499999999997" width="38.69" />
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>

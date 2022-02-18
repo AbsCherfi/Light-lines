@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginPage">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="836.0" fitWidth="738.0" layoutX="-37.0" layoutY="-144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Edinburgh%20large.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane2" layoutX="80.0" layoutY="145.0" prefHeight="383.0" prefWidth="332.0" style="-fx-background-color: gray; -fx-border-color: lightBlue; -fx-border-width: 2px 2px 2px 2px;">
+         <children>
+            <ImageView fx:id="lightLinesLogo" fitHeight="115.0" fitWidth="196.0" layoutX="71.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../0.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="myLogo" fitHeight="176.0" fitWidth="181.0" layoutX="206.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Abs%20Logo%202%20(Transparent).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="140.0" layoutY="255.0" mnemonicParsing="false" onAction="#login" onKeyPressed="#enter" style="-fx-background-color: lightBlue;" text="Login" underline="true" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="43.67" radius="20.055" spread="0.12" width="38.55" />
+               </effect>
+            </Button>
+            <Label fx:id="password" layoutX="21.0" layoutY="159.0" text="Password" textFill="#1a1b1b" underline="true" wrapText="true">
+               <font>
+                  <Font name="Avenir Next Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="20.0" layoutY="113.0" text="User" textFill="#171717" underline="true" wrapText="true">
+               <font>
+                  <Font name="Avenir Next Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <PasswordField fx:id="passwordField" layoutX="238.0" layoutY="306.0" promptText="Enter your Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="textField" layoutX="238.0" layoutY="262.0" promptText="Enter your Username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" styleClass="-fx-border" />
+   </children>
+</Pane>
